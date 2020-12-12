@@ -25,7 +25,7 @@ struct svector {
 		svector (const svector&) = delete;
 		svector& operator=(const svector&) = delete;
 		
-		T& operator[](const unsigned int && n) {					//indexing operator return ref
+		T& operator[](const unsigned int && n) {					//indexing operator; return ref of item
 			assert(_size > 0);
 			return buffer[n];
 		}
